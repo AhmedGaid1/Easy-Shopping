@@ -33,11 +33,10 @@ function ViewProductsBody(props) {
   return (
     <div className="productBody">
       <div classes="float-l all-flex space-between container-div products-body-div">
-        <VProduct
-          key={id}
-          index={id}
-          src={require("../" + products[id].src)}
-        />
+        {products[id].src.map((item) => (
+          <VProduct key={id} index={id} src={require("../" + item)} />
+        ))}
+        {/* <VProduct key={id} index={id} src={require("../" + products[id].src)} /> */}
       </div>
     </div>
   );
