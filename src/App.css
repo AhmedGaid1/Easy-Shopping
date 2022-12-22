@@ -1,0 +1,152 @@
+/****************** color palette ******************/
+/*
+color: #1d0f32;
+background: #87A2FB;
+other: #ADDDD0;
+#EEEEEE;
+*/
+
+/****************** General ******************/
+button {
+  background-color: #1d0f32;
+  color: #eeeeee;
+  padding: 1%;
+  border-radius: 10px;
+  margin: 5px;
+  border: 1px solid #1d0f32;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eeeeee;
+  color: #1d0f32;
+  transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: #1d0f32;
+}
+
+/****************** Navbar ******************/
+.top-main-navbar {
+  text-align: right;
+  box-shadow: 0px -20px 50px 1px;
+  background-color: #f8f9fb;
+  width: 100vw;
+  transition: 0.5s;
+  top: -10%;
+}
+
+.fixed_navbar {
+  position: fixed;
+  top: 0;
+}
+
+.scrolled {
+  position: fixed;
+  z-index: 30;
+  background-color: #6f90b6;
+  top: 0;
+  left: 0;
+}
+
+.top-main-navbar img {
+  width: 4%;
+  float: left;
+  margin: 10px 6%;
+}
+
+.navbar-btns {
+  color: #1d0f32;
+  padding: 1% 6%;
+}
+
+.navbar-icons:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  color: #adddd0;
+}
+
+.Search {
+  border: 1px solid rgb(212, 212, 212);
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 30px;
+  border: 1px solid #6f90b6;
+  width: 15rem;
+  box-shadow: 1px 1px 10px #1d0f3243;
+  margin-right: 16px;
+}
+
+.Search:focus-visible {
+  outline: none;
+  transition: 0.2s;
+  border: 1px solid #1d0f32;
+  box-shadow: 1px 1px 10px #1d0f32;
+}
+
+/****************** Intro ******************/
+.intro-div {
+  padding: 6% auto;
+  text-align: center;
+  margin: auto 6%;
+  height: 90vh;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+}
+
+.intro-div h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.intro-div p {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.intro-div div {
+  position: relative;
+  top: 70%;
+}
+
+/****************** Products Section ******************/
+.Section {
+  text-align: center;
+  margin: 4% 0;
+}
+
+.products-container {
+  text-align: left;
+  display: flex;
+  margin: 3% 6%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card:not(:last-child) {
+  margin-right: 2%;
+}
+
+.product-card {
+  cursor: pointer;
+  border: #1d0f3200 2px solid;
+  background-color: #fff;
+}
+
+.products-container img {
+  width: 100%;
+}
+
+.product-card:hover {
+  transition: 0.6s;
+  position: relative;
+  border: #1d0f32 2px solid;
+  scale: 1.1;
+}
+
+.product-desc {
+  padding: 5px;
+}
