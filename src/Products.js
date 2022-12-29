@@ -49,7 +49,7 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
         color: "black",
     },
     {
@@ -58,7 +58,7 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
         color: "black",
     },
     {
@@ -67,7 +67,7 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
         color: "black",
     },
     {
@@ -76,7 +76,7 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
         color: "black",
     },
     {
@@ -153,12 +153,12 @@ const products = [{
     },
     {
         id: 17,
-        src: ["Images/White/white1/.jpg"],
+        src: ["Images/White/white1.jpg"],
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "top",
         gender: "female",
-        color: "White",
+        color: "white",
     },
     {
         id: 18,
@@ -167,7 +167,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 19,
@@ -176,7 +176,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 20,
@@ -185,7 +185,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 21,
@@ -194,7 +194,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 22,
@@ -203,7 +203,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
-        color: "White",
+        color: "white",
     },
 ];
 export default products;

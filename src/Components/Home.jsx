@@ -13,7 +13,6 @@ function Home() {
   return (
     <div>
       <Navbar />
-<<<<<<< HEAD
       <Intro
         Image={IntroImage}
         header="Always Perfect"
@@ -27,11 +26,6 @@ function Home() {
         text="Love white outfits We got you covered"
         color="white"
       />
-=======
-      <Intro Image={IntroImage} header="Always Perfect" text="Love black outfits how about taking a tour" />
-      <ProductsSection header="Top Sellings Products" products={topProducts} />
-      <Intro Image={IntroImage1} header="Timeless tailoring" text="Love white outfits We got you covered" />
->>>>>>> 8803ec88858910c3960e4723c31c75dade88755b
       <ProductsSection header="Products On Sales" products={saleProducts} />
       <Footer />
     </div>

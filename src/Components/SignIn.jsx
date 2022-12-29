@@ -1,9 +1,7 @@
 import * as React from "react";
-import Navbar from "./Navbar";
 import "./Styles/Sign.css";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
-import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
@@ -12,7 +10,6 @@ import InputAdornment from "@mui/material/InputAdornment";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Footer from "./Footer";
-import axios from "axios";
 
 function SignIn() {
   const [values, setValues] = React.useState({
@@ -42,15 +39,6 @@ function SignIn() {
     var pass = document.querySelector("form input[name='password']").value;
 
     const data = JSON.parse(`{"email":"${email}", "password":"${pass}"}`);
-
-    axios
-      .post("login", data, { withCredentials: true })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
   }
 
   return (

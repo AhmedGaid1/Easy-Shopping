@@ -8,8 +8,10 @@ import SignUp from "./Components/SignUp";
 import ViewProductsBody from "./Components/ViewProducts";
 import Shop from "./Components/Shop";
 import Footer from "./Components/Footer";
+import { useCart } from "react-use-cart";
 
 function App() {
+
   return (
     <Router>
       <Routes>

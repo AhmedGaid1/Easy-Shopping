@@ -1,37 +1,35 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import products from "../Products";
+import Products from "./Product";
 
 function Shop() {
-  const [newGlasses, setNewGlasses] = useState(products);
+  const search = useLocation().search;
+  const gender = new URLSearchParams(search).get("gender");
+  const color = new URLSearchParams(search).get("color");
+  var Arr;
+
+  if (gender === null && color === null) {
+    Arr = products;
+  } else if (gender === null && color !== null) {
+    Arr = products.filter((item) => item.color === color);
+  } else if (gender !== null && color === null) {
+    Arr = products.filter((item) => item.gender === gender);
+  } else if (gender !== null && color !== null) {
+    const genderArr = products.filter((item) => item.gender === gender);
+    Arr = genderArr.filter((item) => item.color === color);
+  }
 
   return (
     <div>
-        <div style={{}}>
-            <h1>Gender</h1>
-            <div style={{textAlign: "center", display: "flex", justifyItems: "space-around"}}>
-                <p>Male</p>
-                <input type="checkbox" />
-                <p>Female</p>
-            </div>
-        </div>
-        <div className="products-container wrap">
-            {newGlasses.map((item) => {
-              return (
-                <Link to={"/view-product?product=" + item.id}>
-                  <div key={item.id} className="product-card">
-                    <img src={require("../" + item.src)} alt={item.Name} />
-                    <div className="product-desc">
-                      <h2>{item.Name}</h2>
-                      <p>Price ${item.price}</p>
-                      <button className="product-btns">Add To Cart</button>
-                      <button className="product-btns">Buy Now</button>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
+      <div className="products-container wrap">
+        {Arr.map((item) => {
+          return (
+            <Link key={item.id} to={"/view-product?product=" + item.id}>
+                <Products item={item}/>
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 }

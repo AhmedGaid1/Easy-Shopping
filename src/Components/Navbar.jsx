@@ -65,8 +65,14 @@ function Navbar(props) {
             type="text"
             placeholder="What are you looking for"
           />
+            <Link to="/shop?gender=male">
+              <button>Male</button>
+            </Link>
+            <Link to="/shop?gender=female">
+              <button>Female</button>
+            </Link>
             <Link to="/shop">
-              <Button>Shop Now</Button>
+              <button>Shop Now</button>
             </Link>
           {SignUp && (
             <Link to="/sign-in">
@@ -78,7 +84,6 @@ function Navbar(props) {
               <button>Sign Up</button>
             </Link>
           )}
-          <FavoriteBorderIcon className="navbar-icons" />
           <ShoppingCartIcon className="navbar-icons" />
         </div>
       </div>
