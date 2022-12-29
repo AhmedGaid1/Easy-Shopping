@@ -144,7 +144,7 @@ const products = [{
     },
     {
         id: 17,
-        src: ["Images/White/white1/.jpg"],
+        src: ["Images/White/white1.jpg"],
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "top",
