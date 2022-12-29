@@ -11,10 +11,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/display-products">
-          <Navbar />
-          <DisplayProducts />
-        </Route> */}
         <Route
           path="/sign-in"
           element={

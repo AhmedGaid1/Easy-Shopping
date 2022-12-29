@@ -15,99 +15,94 @@ import Footer from "./Footer";
 import axios from "axios";
 
 function SignIn() {
-    const [values, setValues] = React.useState({
-        password: "",
-        confirmPassword: "",
-        showPassword: false,
+  const [values, setValues] = React.useState({
+    password: "",
+    confirmPassword: "",
+    showPassword: false,
+  });
+
+  const handlePasswordChange = (prop) => (event) => {
+    setValues({ ...values, [prop]: event.target.value });
+  };
+
+  const handleClickShowPassword = () => {
+    setValues({
+      ...values,
+      showPassword: !values.showPassword,
     });
+  };
 
-    const handlePasswordChange = (prop) => (event) => {
-        setValues({ ...values, [prop]: event.target.value });
-    };
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
 
-    const handleClickShowPassword = () => {
-        setValues({
-            ...values,
-            showPassword: !values.showPassword,
-        });
-    };
+  function handleSubmit(event) {
+    event.preventDefault();
+    var email = document.querySelector("form input[name='email']").value;
+    var pass = document.querySelector("form input[name='password']").value;
 
-    const handleMouseDownPassword = (event) => {
-        event.preventDefault();
-    };
+    const data = JSON.parse(`{"email":"${email}", "password":"${pass}"}`);
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        var email = document.querySelector("form input[name='email']").value;
-        var pass = document.querySelector("form input[name='password']").value;
+    axios
+      .post("login", data, { withCredentials: true })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 
-
-        const data = JSON.parse(`{"email":"${email}", "password":"${pass}"}`);
-
-        axios
-            .post("login", data, { withCredentials: true })
-            .then(function (response) {
-                console.log(response);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
-
-    return (
-        <div>
-            <div className="happy-background">
-                <div className="float-r container-div form">
-                    <Box sx={{ "& > :not(style)": { m: 1 } }}>
-                        <div className="display-flex space-between headers" style={{ marginBottom: "50px" }}>
-                            <h1>
-                                <span>
-                                    Sign In
-                                    <hr className="red-thick-line" style={{ top: "50%", zIndex: 2 }} />
-                                </span>
-                            </h1>
-                        </div>
-                    </Box>
-                    <form onSubmit={handleSubmit} className="sign-div">
-                        <Box sx={{ display: "flex", alignItems: "center", "& > :not(style)": { m: 1 } }}>
-                            <TextField name="email" required type="email" label="Email" />
-                        </Box>
-                        <Box sx={{ display: "flex", alignItems: "center", "& > :not(style)": { m: 1 } }}>
-                            <FormControl sx={{ m: 1, width: "25ch" }} variant="outlined">
-                                <InputLabel htmlFor="outlined-adornment-password" required>
-                                    Password
-                                </InputLabel>
-                                <OutlinedInput
-                                    required
-                                    type={values.showPassword ? "text" : "password"}
-                                    value={values.password}
-                                    onChange={handlePasswordChange("password")}
-                                    endAdornment={
-                                        <InputAdornment id="show-login-pass" position="end">
-                                            <IconButton aria-label="toggle password visibility" onClick={handleClickShowPassword} onMouseDown={handleMouseDownPassword} edge="end">
-                                                {values.showPassword ? <VisibilityOff /> : <Visibility />}
-                                            </IconButton>
-                                        </InputAdornment>
-                                    }
-                                    name="password"
-                                    label="Password"
-                                />
-                            </FormControl>
-                        </Box>
-                        
-                        <Box sx={{ display: "flex", alignItems: "center", "& > :not(style)": { m: 1 } }}>
-                            <Link to={"sign-up"}>Create New Account</Link>
-                        </Box>
-
-                        <Box sx={{ display: "flex", alignItems: "center", "& > :not(style)": { m: 1 } }}>
-                            <button className="btn btn-lg sign-btn">Log In</button>
-                        </Box>
-                    </form>
-                </div>
+  return (
+    <div>
+      <div className="happy-background">
+        <div className="float-r container-div form">
+          <Box sx={{ "& > :not(style)": { m: 1 } }}>
+            <div className="display-flex space-between headers" style={{ marginBottom: "50px" }}>
+              <h1>
+                <span>
+                  Sign In
+                  <hr className="red-thick-line" style={{ top: "50%", zIndex: 2 }} />
+                </span>
+              </h1>
             </div>
-            <Footer />
+          </Box>
+          <form onSubmit={handleSubmit} className="sign-div">
+            <Box sx={{ display: "flex", alignItems: "center", "& > :not(style)": { m: 1 } }}>
+              <TextField name="email" required type="email" label="Email" />
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", "& > :not(style)": { m: 1 } }}>
+              <FormControl sx={{ m: 1, width: "25ch" }} variant="outlined">
+                <InputLabel htmlFor="outlined-adornment-password" required>
+                  Password
+                </InputLabel>
+                <OutlinedInput
+                  required
+                  type={values.showPassword ? "text" : "password"}
+                  value={values.password}
+                  onChange={handlePasswordChange("password")}
+                  endAdornment={
+                    <InputAdornment id="show-login-pass" position="end">
+                      <IconButton aria-label="toggle password visibility" onClick={handleClickShowPassword} onMouseDown={handleMouseDownPassword} edge="end">
+                        {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                  name="password"
+                  label="Password"
+                />
+              </FormControl>
+            </Box>
+
+            <Box sx={{ display: "flex", alignItems: "center", "& > :not(style)": { m: 1 } }}>
+              <button className="btn btn-lg sign-btn">Log In</button>
+            </Box>
+          </form>
         </div>
-    );
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default SignIn;

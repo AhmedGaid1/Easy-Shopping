@@ -1,10 +1,9 @@
 /* eslint-disable */
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import InfoSignInOut from "./InfoSignInOut";
 import { Link } from "react-router-dom";
-import Button from "./Basic/button";
 
 function Navbar(props) {
   const [scrolled, setScrolled] = React.useState(false);
@@ -49,37 +48,27 @@ function Navbar(props) {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });
-  let navbarClasses =
-    stat === "all" ? ["top-main-navbar"] : ["top-main-navbar fixed_navbar"];
+  let navbarClasses = stat === "all" ? ["top-main-navbar"] : ["top-main-navbar fixed_navbar"];
   if (scrolled) {
     navbarClasses.push("scrolled");
   }
 
   return (
     <nav>
-      <div
-        className={navbarClasses
-          .toString()
-          .slice(0, navbarClasses.toString().length)
-          .replace(",", " ")}
-      >
+      <div className={navbarClasses.toString().slice(0, navbarClasses.toString().length).replace(",", " ")}>
         <Link to="/">
           <img src={require("../Images/logo.png")} alt="logo-img" />
         </Link>
         <div className="navbar-btns">
-          <input
-            className="Search"
-            type="text"
-            placeholder="What are you looking for"
-          />
+          <input className="Search" type="text" placeholder="What are you looking for" />
           {SignUp && (
             <Link to="/sign-in">
-              <Button>Sign In</Button>
+              <button>Sign In</button>
             </Link>
           )}
           {SignIn && (
             <Link to="/sign-up">
-              <Button>Sign Up</Button>
+              <button>Sign Up</button>
             </Link>
           )}
           <FavoriteBorderIcon className="navbar-icons" />
