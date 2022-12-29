@@ -60,7 +60,20 @@ function Navbar(props) {
           <img src={require("../Images/logo.png")} alt="logo-img" />
         </Link>
         <div className="navbar-btns">
-          <input className="Search" type="text" placeholder="What are you looking for" />
+          <input
+            className="Search"
+            type="text"
+            placeholder="What are you looking for"
+          />
+            <Link to="/shop?gender=male">
+              <button>Male</button>
+            </Link>
+            <Link to="/shop?gender=female">
+              <button>Female</button>
+            </Link>
+            <Link to="/shop">
+              <button>Shop Now</button>
+            </Link>
           {SignUp && (
             <Link to="/sign-in">
               <button>Sign In</button>
@@ -71,7 +84,6 @@ function Navbar(props) {
               <button>Sign Up</button>
             </Link>
           )}
-          <FavoriteBorderIcon className="navbar-icons" />
           <ShoppingCartIcon className="navbar-icons" />
         </div>
       </div>

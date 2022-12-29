@@ -1,5 +1,4 @@
 import Box from "@mui/material/Box";
-import Button from "./Basic/button";
 import { Link } from "react-router-dom";
 
 function InfoSignInOut(props) {
@@ -8,12 +7,12 @@ function InfoSignInOut(props) {
         <div>
             {props.SignUp && (
                 <Link to="/sign-in">
-                    <Button>Sign In</Button>
+                    <button>Sign In</button>
                 </Link>
             )}
             {props.SignIn && (
                 <Link to="/sign-up">
-                    <Button>Sign Up</Button>
+                    <button>Sign Up</button>
                 </Link>
             )}
         </div>

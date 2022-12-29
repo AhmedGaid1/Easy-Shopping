@@ -13,9 +13,19 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Intro Image={IntroImage} header="Always Perfect" text="Love black outfits how about taking a tour" />
+      <Intro
+        Image={IntroImage}
+        header="Always Perfect"
+        text="Love black outfits how about taking a tour"
+        color="black"
+      />
       <ProductsSection header="Top Sellings Products" products={topProducts} />
-      <Intro Image={IntroImage1} header="Timeless tailoring" text="Love white outfits We got you covered" />
+      <Intro
+        Image={IntroImage1}
+        header="Timeless tailoring"
+        text="Love white outfits We got you covered"
+        color="white"
+      />
       <ProductsSection header="Products On Sales" products={saleProducts} />
       <Footer />
     </div>

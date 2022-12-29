@@ -5,6 +5,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 1,
@@ -13,6 +14,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 2,
@@ -21,6 +23,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 3,
@@ -29,6 +32,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 4,
@@ -37,6 +41,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
+        color: "black",
     },
     {
         id: 5,
@@ -44,7 +49,8 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
+        color: "black",
     },
     {
         id: 6,
@@ -52,7 +58,8 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
+        color: "black",
     },
     {
         id: 7,
@@ -60,7 +67,8 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
+        color: "black",
     },
     {
         id: 8,
@@ -68,7 +76,8 @@ const products = [{
         Name: "Relaxed Fit Hoodie",
         price: 649,
         status: "sale",
-        gender: "male",
+        gender: "female",
+        color: "black",
     },
     {
         id: 9,
@@ -149,7 +158,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "female",
-        color: "White",
+        color: "white",
     },
     {
         id: 18,
@@ -158,7 +167,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 19,
@@ -167,7 +176,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 20,
@@ -176,7 +185,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 21,
@@ -185,7 +194,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
-        color: "White",
+        color: "white",
     },
     {
         id: 22,
@@ -194,7 +203,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
-        color: "White",
+        color: "white",
     },
 ];
 export default products;

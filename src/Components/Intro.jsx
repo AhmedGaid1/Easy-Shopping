@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Intro(props) {
   return (
     <div
@@ -10,7 +12,9 @@ function Intro(props) {
       <div>
         <h1>{props.header}</h1>
         <p>{props.text}</p>
-        <button>Shop Now</button>
+        <Link to={"/shop?color=" + props.color}>
+          <button>Shop Now</button>
+        </Link>
       </div>
     </div>
   );
