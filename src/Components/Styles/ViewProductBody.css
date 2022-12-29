@@ -57,6 +57,7 @@
 .right-small-div:first-child {
     margin: 10px 10px 30px;
 }
+
 .right-small-div:last-child {
     margin: 30px 10px 10px;
 }
@@ -126,23 +127,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 10px;
-}
-
-.similar-glasses img {
-    width: 100%;
-}
-
-.similar-glasses a {
-    transition: 1s;
-    width: 47%;
-    border: 1px #666666 solid;
-    padding: 50px 20px;
-    margin: 5px;
-}
-
-.similar-glasses a:hover {
-    border-color: #6f90b6;
-    transform: scale(1.1);
 }
 
 .three-products-in-row {

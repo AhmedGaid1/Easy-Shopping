@@ -3,51 +3,50 @@ import { faTwitter, faFacebook, faPinterest, faInstagram } from "@fortawesome/fr
 import "./Styles/footer.css";
 
 function Footer() {
-    return (
-        <div>
-            <div className="footer">
-                <div className="inner-footer big-margin">
-                    <div className="o-4 footer-links-div">
-                        <h5>Shop</h5>
-                        <a href="">Men</a>
-                        <a href="">Women</a>
-                        <a href="">Accessories</a>
-                    </div>
-                    <div className="o-3 footer-links-div">
-                        <h5>Help</h5>
-                        <a href="">FAQ</a>
-                        <a href="">Contact Us</a>
-                        <a href="">Order Status</a>
-                        <a href="">Return Policy</a>
-                        <a href="">Warranty</a>
-                    </div>
-                    <div className="o-2 footer-links-div">
-                        <h5 className="headers-ref">About Us</h5>
-                        <h5 className="headers-ref">Payment Methods</h5>
-                        <h5 className="headers-ref">Blog</h5>
-                    </div>
-                    <div className="o-1 right-footer">
-                        <div className="footer-logo">
-                            <img src={require("../Images/logo.png")} alt="logo" />
-                            <h1>GAR</h1>
-                        </div>
-                        <div className="social">
-                            <h4>Get Social</h4>
-                            <div>
-                                <FontAwesomeIcon icon={faTwitter} className="font-upload" />
-                                <FontAwesomeIcon icon={faFacebook} className="font-upload" />
-                                <FontAwesomeIcon icon={faPinterest} className="font-upload" />
-                                <FontAwesomeIcon icon={faInstagram} className="font-upload" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div>
+      <div className="footer">
+        <div className="inner-footer big-margin">
+          <div className="o-4 footer-links-div">
+            <h5>Shop</h5>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Accessories</a>
+          </div>
+          <div className="o-3 footer-links-div">
+            <h5>Help</h5>
+            <a href="">FAQ</a>
+            <a href="">Contact Us</a>
+            <a href="">Order Status</a>
+            <a href="">Return Policy</a>
+            <a href="">Warranty</a>
+          </div>
+          <div className="o-2 footer-links-div">
+            <h5 className="headers-ref">About Us</h5>
+            <h5 className="headers-ref">Payment Methods</h5>
+            <h5 className="headers-ref">Blog</h5>
+          </div>
+          <div className="o-1 right-footer">
+            <div className="footer-logo">
+              <img src={require("../Images/logo.png")} alt="logo" />
             </div>
-            <footer>
-                <p>Copyright &copy; Abd El Gaid's Team 2022</p>
-            </footer>
+            <div className="social">
+              <h4>Get Social</h4>
+              <div>
+                <FontAwesomeIcon icon={faTwitter} className="font-upload" />
+                <FontAwesomeIcon icon={faFacebook} className="font-upload" />
+                <FontAwesomeIcon icon={faPinterest} className="font-upload" />
+                <FontAwesomeIcon icon={faInstagram} className="font-upload" />
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+      <footer>
+        <p>Copyright &copy; Abd El Gaid's Team 2022</p>
+      </footer>
+    </div>
+  );
 }
 
 export default Footer;

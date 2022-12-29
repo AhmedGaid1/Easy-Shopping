@@ -1,9 +1,14 @@
 /* color #6f90b6 */
+
+
 /* color hover #2e4e78 */
+
 .sign-btn {
     background-color: #2e4e78;
     color: #fff;
     border: 3px solid #2e4e78;
+    width: 15%;
+    text-align: center;
 }
 
 .sign-btn:hover {
@@ -14,9 +19,11 @@
 
 .form {
     width: 40%;
-    margin: 70px 140px;
-    padding: 0px;
+    height: fit-content;
+    margin: 70px 100px;
+    padding: 10px;
     background-color: #fffffff2;
+    border-radius: 25px;
 }
 
 .happy-background {
@@ -41,10 +48,6 @@
 
 .sign-div div {
     width: 100%;
-}
-
-#country-select-demo {
-    width: 0;
 }
 
 #show-pass {

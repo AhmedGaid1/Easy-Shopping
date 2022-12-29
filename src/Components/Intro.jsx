@@ -5,10 +5,7 @@ function Intro(props) {
     <div
       className="intro-div"
       style={{
-        backgroundImage:
-          "url(" +
-          props.Image +
-          "), linear-gradient(rgba(24, 24, 24, 0), rgba(24, 24, 24, 0.3))",
+        backgroundImage: "url(" + props.Image + "), linear-gradient(rgba(24, 24, 24, 0), rgba(24, 24, 24, 0.3))",
         backgroundBlendMode: "overlay",
       }}
     >
