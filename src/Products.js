@@ -1,62 +1,3 @@
-<<<<<<< HEAD
-const products = [
-  {
-    id: 0,
-    src: ["Images/Products/1.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "top",
-  },
-  {
-    id: 1,
-    src: ["Images/Products/2.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "top"
-  },
-  {
-    id: 3,
-    src: ["Images/Products/3.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "top"
-  },
-  {
-    id: 4,
-    src: ["Images/Products/4.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "top"
-  },
-  {
-    id: 5,
-    src: ["Images/Products/1.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "sale"
-  },
-  {
-    id: 6,
-    src: ["Images/Products/2.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "sale"
-  },
-  {
-    id: 7,
-    src: ["Images/Products/3.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "sale"
-  },
-  {
-    id: 8,
-    src: ["Images/Products/4.jpg"],
-    Name: "Relaxed Fit Hoodie",
-    price: 649,
-    status: "sale"
-  },
-=======
 const products = [{
         id: 0,
         src: ["Images/Products/1.jpg"],
@@ -64,6 +5,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 1,
@@ -72,6 +14,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 2,
@@ -80,6 +23,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 3,
@@ -88,6 +32,7 @@ const products = [{
         price: 649,
         status: "top",
         gender: "male",
+        color: "black",
     },
     {
         id: 4,
@@ -96,6 +41,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
+        color: "black",
     },
     {
         id: 5,
@@ -104,6 +50,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
+        color: "black",
     },
     {
         id: 6,
@@ -112,6 +59,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
+        color: "black",
     },
     {
         id: 7,
@@ -120,6 +68,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
+        color: "black",
     },
     {
         id: 8,
@@ -128,6 +77,7 @@ const products = [{
         price: 649,
         status: "sale",
         gender: "male",
+        color: "black",
     },
     {
         id: 9,
@@ -255,6 +205,5 @@ const products = [{
         gender: "male",
         color: "White",
     },
->>>>>>> 8803ec88858910c3960e4723c31c75dade88755b
 ];
 export default products;

@@ -60,7 +60,6 @@ function Navbar(props) {
           <img src={require("../Images/logo.png")} alt="logo-img" />
         </Link>
         <div className="navbar-btns">
-<<<<<<< HEAD
           <input
             className="Search"
             type="text"
@@ -69,9 +68,6 @@ function Navbar(props) {
             <Link to="/shop">
               <Button>Shop Now</Button>
             </Link>
-=======
-          <input className="Search" type="text" placeholder="What are you looking for" />
->>>>>>> 8803ec88858910c3960e4723c31c75dade88755b
           {SignUp && (
             <Link to="/sign-in">
               <button>Sign In</button>
