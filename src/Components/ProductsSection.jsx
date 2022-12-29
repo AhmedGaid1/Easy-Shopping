@@ -15,6 +15,8 @@ function ProductsSection(props) {
                 <div className="product-desc">
                   <h2>{item.Name}</h2>
                   <p>Price ${item.price}</p>
+                  <button className="product-btns">Add To Cart</button>
+                  <button className="product-btns">Buy Now</button>
                 </div>
               </div>
             </Link>

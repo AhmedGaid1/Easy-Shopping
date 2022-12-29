@@ -6,6 +6,8 @@ import ScrollToTop from "./Components/Basic/ScrollTopTop";
 import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
 import ViewProductsBody from "./Components/ViewProducts";
+import Shop from "./Components/Shop";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -34,12 +36,23 @@ function App() {
           }
         />
         <Route
+          path="/shop"
+          element={
+            <div>
+              <Navbar />
+              <Shop />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
           name="/view-product"
           path="/:Product"
           element={
             <div>
               <Navbar />
               <ViewProductsBody />
+              <Footer />
             </div>
           }
         />

@@ -72,6 +72,9 @@ function Navbar(props) {
             type="text"
             placeholder="What are you looking for"
           />
+            <Link to="/shop">
+              <Button>Shop Now</Button>
+            </Link>
           {SignUp && (
             <Link to="/sign-in">
               <Button>Sign In</Button>

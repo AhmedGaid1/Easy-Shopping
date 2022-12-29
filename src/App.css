@@ -28,6 +28,11 @@ a {
   color: #1d0f32;
 }
 
+.wrap {
+  flex-wrap: wrap !important;
+  justify-content: space-around !important;
+}
+
 /****************** Navbar ******************/
 .top-main-navbar {
   text-align: right;
